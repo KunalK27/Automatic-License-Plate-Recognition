@@ -10,7 +10,7 @@
 # streamlit configurations and options
 import streamlit as st
 from streamlit import caching
-st.beta_set_page_config(page_title="Ex-stream-ly Cool App", page_icon="😎", layout="centered", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Ex-stream-ly Cool App", page_icon="😎", layout="centered", initial_sidebar_state="expanded")
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
 from utils.retinanet_helper import retinanet_detector, draw_detections, inference, load_image, image_preprocessing, load_retinanet
