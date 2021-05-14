@@ -52,14 +52,14 @@ def about():
         """)
     github = st.button("👉🏼 Click Here To See How It Works")
     if github:
-        github_link = "https://github.com/udaylunawat/Automatic-License-Plate-Recognition"
+        github_link = "https://github.com/SamratRode/Automatic-License-Plate-Recognition"
         try:
             webbrowser.open(github_link)
         except:
             st.error("""
                 ⭕ Something Went Wrong!!! Please Try Again Later!!!
                 """)
-    st.info("Built with Streamlit by [Uday Lunawat 😎](https://github.com/udaylunawat)")
+    st.info("Built with Streamlit by [Samrat, Anika and Aiswarya 😎](https://github.com/SamratRode)")
 
 
 # @st.cache(suppress_st_warning=True, allow_output_mutation=True, show_spinner=True)
@@ -175,7 +175,7 @@ def multi_crop(image, crop_list):
 #======================== Time To See The Magic ===========================
 
 st.sidebar.markdown("## Automatic License Plate recognition system 🇮🇳")
-st.sidebar.markdown("Made with :heart: in India by [Uday Lunawat](https://udaylunawat.github.io)")
+
 
 crop, image = None, None
 img_size, crop_size = 600, 400
@@ -200,7 +200,7 @@ if choice == "Home":
     #  and a [YouTube playlist](https://www.youtube.com/playlist?list=PL6vjgQ2-qJFeMrZ0sBjmnUBZNX9xaqKuM) detailing more below.")
     # or OpenCV Haar cascade
 
-    st.sidebar.warning("#### Checkout the Source code on [GitHub](https://github.com/udaylunawat/Automatic-License-Plate-Recognition)")
+    st.sidebar.warning("#### Checkout the Source code on [GitHub](https://github.com/SamratRode/Automatic-License-Plate-Recognition)")
 
     st.image("output/sample_output.png",
             caption="Example of a model being run on a car.",
@@ -265,7 +265,7 @@ elif choice == "RetinaNet Detection" or "YoloV3 Detection":
 
     if image:
         
-        st.sidebar.markdown("## Preview Of Selected Image! 👀")
+        st.sidebar.markdown("## Preview Of Selected Image! ")
         streamlit_preview_image(image)
         
         docs = st.sidebar.empty()
